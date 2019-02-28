@@ -16,8 +16,8 @@ int main() {
 		}
 
 		else if (row % 2 == 0){
-			for (int k = 1; k <= input; k++){
-				cout << "_ ";
+			for (int k = 1; k <= input*2-1; k++){
+				cout << "_";
 			}
       cout<<endl;
 
