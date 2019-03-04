@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int const size=5;
+int findtestscore(int [],int ,int);
+int main() {
+  int testscore[size]={80,95,85,100,98};
+  int input;
+  cout<<"Enter the test score: ";
+  cin>>input;
+  int result=findtestscore(testscore, size,input);
+  if(result==-1){
+    cout<<"You did not receive "<<input<<" in any test.";
+  }
+  else
+   cout<<"You receive "<<input<<" in test# "<<result+1;
+
+   return 0;
+}
+
+int findtestscore(int list[],int size ,int value){
+  bool find=false;
+  int poistion =-1,
+      index=0;
+  
+  while(!find && index<size){
+    if (list[index]==value){
+      poistion=index;
+      find=true;
+    }
+    index++;
+  }
+return poistion;
+}
