@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int k=0;
+  for(int i=1;i<=11;i++){   //rows
+     if(i<=6) k++;         //midpoint=(rows+1)/2
+     else k--;
+   for(int j=1;j<=6;j++){  //column=(row+1)/2
+     if(j>=7-k) cout<<"*";  //(row+1)/2+1-k
+     else cout<<" ";
+   } 
+   
+   cout<<endl;
+
+} 
+return 0;
+}
