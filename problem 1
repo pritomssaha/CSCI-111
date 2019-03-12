@@ -1,0 +1,29 @@
+/* Write a complete C++ program that asks the user to type a big integer n. It should then ask 4 times for the user to type a smaller
+value of n and then terminate the program. However, if the user ever enters a value that is not smaller it should immediately say Goodbye
+and terminate the program. */
+
+#include <iostream>
+using namespace std;
+int main() {
+ int smallnum;
+ int largenum;
+ cout<<"enter larger number: ";
+ cin>>largenum;
+ int count=0;
+ int min=0;
+ cout<<"enter a smaller value: ";
+ cin>>smallnum;    
+ min=smallnum;
+ while(largenum>smallnum && count<4){
+   cout<<"enter a smaller value: ";
+   cin>>smallnum;
+   count++;
+  if(min<smallnum){
+     return 0;
+   }
+  else 
+    min=smallnum;
+ }
+ cout<<"Thank you.";
+return 0;
+}
