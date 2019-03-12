@@ -3,6 +3,7 @@ of n and then thank the user. However, if the user ever enters a value that is n
 Partial credit will be given for programs that perform some of the required steps but excessively long or complicated programs will lose
 credit. */
 
+//https://venus.cs.qc.cuny.edu/~krishna/spring19/cs111/prac1.pdf
 
 #include <iostream>
 using namespace std;
