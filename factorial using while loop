@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() {
+int row=1,
+    column=1,
+    input=0;   //5
+cout<<"Enter a value: ";
+cin>>input;
+while(row<=input){
+  column=row;
+  cout<<row<<"!= ";
+  int factorial=1;
+  while(column>=1){
+  factorial*=column;
+   cout<<column;
+   if(column>1){cout<<" x ";}
+   column--;
+  }
+  cout<<" = "<<factorial<<endl;
+  row++;
+}
+return 0;
+}
