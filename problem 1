@@ -14,7 +14,7 @@ int main() {
  cout<<"enter a smaller value: ";
  cin>>smallnum;    
  min=smallnum;
- while(largenum>smallnum && count<4){
+ while(largenum>smallnum && count<3){
    cout<<"enter a smaller value: ";
    cin>>smallnum;
    count++;
