@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+void rectangle(int n){
+  if (n<=0) return;
+  else {
+    cout<<"**********"<<endl;
+    rectangle(n-1);
+  }
+}
+
+void baseChange(int n, int base){
+ 
+  if (n<=1)  
+    cout<< 1;
+  else {
+   	baseChange(n/base,base);
+    cout<<n%base;
+  }
+}
+
+int main() {
+  rectangle(5);
+  baseChange(156,5);
+}
