@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+int seconddigit(int x){
+  if(x<100) return x%10;
+  else return seconddigit(x/10);
+}
+
 void rectangle(int n){
   if (n<=0) return;
   else {
@@ -22,4 +27,5 @@ void baseChange(int n, int base){
 int main() {
   rectangle(5);
   baseChange(156,5);
+  cout<<seconddigit(6295)<<endl;
 }
